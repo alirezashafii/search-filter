@@ -13,20 +13,96 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --primary-color: #2563EB;
-  --secondary-color: #F97316;
-  --main-white: #f8fafc;
-  --main-black: #121314;
-  --dm-color: #111111;
-}
-
 body {
   max-width: 100vw;
   min-height: 100vh;
   font-family: "Advent Pro", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
-  background-color: var(--main-white);
-  color: var(--main-black);
+  background-color: #f8fafc;
+  color: #121314;
+}
+
+.dark {
+  background-color: #111111;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header {
+  width: 100%;
+  height: 300px;
+  background-image: url("../assets/images/lightheader.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header nav {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav h2 {
+  background: linear-gradient(25deg, #f8fafc, #DC2626, #f8fafc);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+header nav .logo img {
+  width: 50px;
+}
+header .light-toggler svg {
+  width: 30px;
+  color: #f8fafc;
+}
+header .nav-left {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-right {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .nav-right img {
+  width: 40px;
+}
+header hr {
+  max-width: 1440px;
+  margin: 0 auto;
+  opacity: 0.3;
 }/*# sourceMappingURL=style.css.map */
