@@ -130,10 +130,10 @@ header {
   section {
     background-color: $main-white;
     position: absolute;
-    inset: auto 50% -160px 50%;
+    inset: auto 50% -180px 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 140px;
+    height: 160px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -147,13 +147,48 @@ header {
       max-width: 1280px;
       font-family: "Advent Pro", sans-serif;
       font-size: 1.6rem;
-      font-weight: 400;
+      font-weight: 700;
       padding: 1rem 1.5rem;
       outline: none;
       border: none;
       border-radius: 3px;
       background-color: #fff;
       caret-color: $primary-color;
+      transition: border 200ms ease-in;
+
+      &::placeholder {
+        color: $primary-color;
+      }
+      &:focus {
+        border: 2px solid $secondary-color;
+      }
+    }
+
+    .filters {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      a {
+        display: block;
+        width: 70px;
+        background-color: rgba(220, 38, 38, 0.9);
+        color: $main-white;
+        padding: 3px 6px;
+        border: 1px solid $primary-color;
+        border-radius: 3px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        transition: background-color 200ms ease-in-out;
+
+        &:hover {
+          background-color: transparent;
+          color: $secondary-color;
+        }
+      }
     }
   }
 }

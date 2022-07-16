@@ -124,10 +124,10 @@ header h1 {
 header section {
   background-color: #f8fafc;
   position: absolute;
-  inset: auto 50% -160px 50%;
+  inset: auto 50% -180px 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  height: 140px;
+  height: 160px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
@@ -141,11 +141,48 @@ header section input {
   max-width: 1280px;
   font-family: "Advent Pro", sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 700;
   padding: 1rem 1.5rem;
   outline: none;
   border: none;
   border-radius: 3px;
   background-color: #fff;
   caret-color: #b91c1c;
+  transition: border 200ms ease-in;
+}
+header section input::-moz-placeholder {
+  color: #b91c1c;
+}
+header section input:-ms-input-placeholder {
+  color: #b91c1c;
+}
+header section input::placeholder {
+  color: #b91c1c;
+}
+header section input:focus {
+  border: 2px solid #dc2626;
+}
+header section .filters {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header section .filters a {
+  display: block;
+  width: 70px;
+  background-color: rgba(220, 38, 38, 0.9);
+  color: #f8fafc;
+  padding: 3px 6px;
+  border: 1px solid #b91c1c;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: background-color 200ms ease-in-out;
+}
+header section .filters a:hover {
+  background-color: transparent;
+  color: #dc2626;
 }/*# sourceMappingURL=style.css.map */
