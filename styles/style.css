@@ -88,6 +88,7 @@ header nav h2 {
 }
 header nav .logo img {
   width: 50px;
+  margin-right: 6px;
 }
 header .light-toggler svg {
   width: 30px;
@@ -98,16 +99,17 @@ header .nav-left {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 header .nav-right {
-  width: 100px;
+  width: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header .nav-right img {
-  width: 40px;
+header .nav-right .github img,
+header .nav-right .twitter img {
+  width: 26px;
 }
 header hr {
   width: 100%;
@@ -170,19 +172,23 @@ header section .filters {
   flex-wrap: wrap;
   gap: 10px;
 }
+header section .filters .btn {
+  background: linear-gradient(25deg, #dc2626, #b91c1c, #dc2626);
+  background-size: 400% 400%;
+  transition: all 250ms ease-in-out;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+header section .filters .btn:hover, header section .filters .btn:active {
+  background: transparent;
+  color: #dc2626;
+}
 header section .filters a {
   display: block;
   width: 70px;
-  background-color: rgba(220, 38, 38, 0.9);
   color: #f8fafc;
   padding: 3px 6px;
-  border: 1px solid #b91c1c;
   border-radius: 3px;
   font-size: 1.6rem;
   font-weight: 700;
-  transition: background-color 200ms ease-in-out;
-}
-header section .filters a:hover {
-  background-color: transparent;
-  color: #dc2626;
 }/*# sourceMappingURL=style.css.map */
