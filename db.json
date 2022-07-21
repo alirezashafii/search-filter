@@ -1,0 +1,144 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Red Nike",
+      "class": "shoes",
+      "price": 189,
+      "image": "./assets/images/shoes1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Macbook",
+      "class": "gadgets",
+      "price": 1400,
+      "image": "./assets/images/macbook.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Golden Ring",
+      "class": "jewellery",
+      "price": 900,
+      "image": "./assets/images/jewellery4.jpg"
+    },
+    {
+      "id": 4,
+      "title": "White T-shirt",
+      "class": "clothes",
+      "price": 42,
+      "image": "./assets/images/clothes1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Curren",
+      "class": "watches",
+      "price": 2499,
+      "image": "./assets/images/watches1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Sneaker",
+      "class": "shoes",
+      "price": 109,
+      "image": "./assets/images/shoes3.jpg"
+    },
+    {
+      "id": 7,
+      "title": "iPhone",
+      "class": "gadgets",
+      "price": 799,
+      "image": "./assets/images/iphone.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Dangle",
+      "class": "jewellery",
+      "price": 1328,
+      "image": "./assets/images/jewellery2.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Black T-shirt",
+      "class": "clothes",
+      "price": 44,
+      "image": "./assets/images/clothes2.jpg"
+    },
+    {
+      "id": 10,
+      "title": "IWC",
+      "class": "watches",
+      "price": 7300,
+      "image": "./assets/images/watches4.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Air Nike",
+      "class": "shoes",
+      "price": 187,
+      "image": "./assets/images/shoes2.jpg"
+    },
+    {
+      "id": 12,
+      "title": "iPad",
+      "class": "gadgets",
+      "price": 1100,
+      "image": "./assets/images/ipad.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Hoop",
+      "class": "jewellery",
+      "price": 640,
+      "image": "./assets/images/jewellery3.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Mans coat",
+      "class": "clothes",
+      "price": 270,
+      "image": "./assets/images/clothes3.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Rolex",
+      "class": "watches",
+      "price": 6150,
+      "image": "./assets/images/watches2.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Air Zoom",
+      "class": "shoes",
+      "price": 199,
+      "image": "./assets/images/shoes4.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Apple Watch",
+      "class": "gadgets",
+      "price": 499,
+      "image": "./assets/images/applewatch.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Puzzle Ring",
+      "class": "jewellery",
+      "price": 930,
+      "image": "./assets/images/jewellery1.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Peplum",
+      "class": "clothes",
+      "price": 94,
+      "image": "./assets/images/clothes4.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Piguet",
+      "class": "watches",
+      "price": 11300,
+      "image": "./assets/images/watches3.jpg"
+    }
+  ]
+}
