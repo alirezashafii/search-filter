@@ -59,6 +59,30 @@ body {
     background-position: 0% 50%;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
 header {
   width: 100%;
   height: 320px;
@@ -112,6 +136,10 @@ header .nav-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+header .nav-right .sun {
+  -webkit-animation: 4s spin infinite;
+          animation: 4s spin infinite;
 }
 header .nav-right .github img,
 header .nav-right .twitter img {
