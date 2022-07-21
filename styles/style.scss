@@ -32,6 +32,11 @@ body {
 }
 .dark {
   background-color: $dm-color;
+  color: $main-white;
+
+  .search-box input {
+    color: $main-white;
+  }
 }
 
 .container {
@@ -54,7 +59,7 @@ body {
 header {
   width: 100%;
   // height: auto;
-  height: 300px;
+  height: 320px;
   background-image: url("../assets/images/lightheader.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -212,3 +217,22 @@ main {
     }
   }
 }
+
+// .loader{
+//   background: $main-white;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 600ms ease-in-out;
+
+//   svg path,
+//   svg rect{
+//     fill: $primary-color;
+//   }
+// }
