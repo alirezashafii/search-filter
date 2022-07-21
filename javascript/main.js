@@ -1,5 +1,11 @@
 const lightSwitch = document.querySelector(".light-toggler");
 
+// window.onload = () => {
+//   setTimeout(() => {
+//     document.querySelector('.loader').style.height = '0';
+//   }, 1000)
+// }
+
 lightSwitch.addEventListener("click", () => {
   if (document.body.classList.contains("dark")) {
     lightSwitch.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
