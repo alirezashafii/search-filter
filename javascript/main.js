@@ -1,4 +1,8 @@
+// const { default: axios } = require("axios");
+// const axios = require('axios').default;
+
 const lightSwitch = document.querySelector(".light-toggler");
+const searchInput = document.querySelector('.search-box input');
 
 // window.onload = () => {
 //   setTimeout(() => {
@@ -22,3 +26,4 @@ lightSwitch.addEventListener("click", () => {
   }
   document.body.classList.toggle("dark");
 });
+
