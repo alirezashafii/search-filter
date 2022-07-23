@@ -8,7 +8,12 @@
     <meta name="author" content="Alireza Shafii">
     <meta name="description" content="Search and Filter Project" />
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/png" href="#">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./assets/images/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#dc2626">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,36 +48,29 @@
           </div>
         </nav>
         <hr />
-        <h1>Find the products you want</h1>
+        <h1>Find Products You Want</h1>
       </div>
     </header>
-    <main>
+    <main id="main">
       <div class="main-child container">
         <section class="search-box">
           <input type="text" inputmode="search" placeholder="search here ...">
           <div class="filters">
-            <a href="#" class="btn" data-filter>All</a>
-            <a href="#" class="btn" data-filter>Clothes</a>
-            <a href="#" class="btn" data-filter>Shoes</a>
-            <a href="#" class="btn" data-filter>Watches</a>
-            <a href="#" class="btn" data-filter>Gadgets</a>
-            <a href="#" class="btn" data-filter>Jewellery</a>
+            <a href="#main" class="btn" data-filter="">All</a>
+            <a href="#main" class="btn" data-filter="clothes">Clothes</a>
+            <a href="#main" class="btn" data-filter="shoes">Shoes</a>
+            <a href="#main" class="btn" data-filter="watches">Watches</a>
+            <a href="#main" class="btn" data-filter="gadgets">Gadgets</a>
+            <a href="#main" class="btn" data-filter="jewellery">Jewellery</a>
           </div>
         </section>
-        <div class="products">
-
-          <!-- <div class="product">
-            <img src='./assets/images/watches1.jpg' alt="" loading="lazy">
-            <section class="description">
-                <p class="title">watch</p>
-                <p class="price">$1000</p>
-            </section>
-          </div> -->
-
-        </div>
+        <div class="products"></div>
       </div>
     </main>
-    <!-- <div class="loader">
+    <footer>
+      <h4>&copy; Alirea Shafi'i</h4>
+    </footer>
+    <div class="loader">
       <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
         <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
@@ -85,7 +83,7 @@
           repeatCount="indefinite"/>
         </path>
       </svg>
-    </div> -->
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- <script src="./node_modules/axios/dist/axios.min.js"></script> -->
   </body>
