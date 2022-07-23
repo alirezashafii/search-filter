@@ -30,7 +30,7 @@
     },
     {
       "id": 5,
-      "title": "Curren",
+      "title": "Curren watch",
       "class": "watches",
       "price": 2499,
       "image": "./assets/images/watches1.jpg"
@@ -65,7 +65,7 @@
     },
     {
       "id": 10,
-      "title": "IWC",
+      "title": "IWC watch",
       "class": "watches",
       "price": 7300,
       "image": "./assets/images/watches4.jpg"
@@ -100,7 +100,7 @@
     },
     {
       "id": 15,
-      "title": "Rolex",
+      "title": "Rolex watch",
       "class": "watches",
       "price": 6150,
       "image": "./assets/images/watches2.jpg"
@@ -135,7 +135,7 @@
     },
     {
       "id": 20,
-      "title": "Piguet",
+      "title": "Piguet watch",
       "class": "watches",
       "price": 11300,
       "image": "./assets/images/watches3.jpg"
