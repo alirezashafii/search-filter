@@ -243,10 +243,11 @@ main {
     .products {
       width: 100%;
       height: auto;
-      padding: 115px 30px 40px;
+      padding: 115px 30px 80px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-      gap: 15px;
+      column-gap: 15px;
+      row-gap: 25px;
       justify-content: center;
 
       .product {
@@ -255,10 +256,15 @@ main {
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 0 0.5px 1px rgba(94, 94, 94, 0.1);
-        transition: transform 250ms ease-in;
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: transform 250ms ease-in-out;
+
+        &:hover,
+        &:active {
+          transform: scale(1.02);
+        }
 
         img {
           width: 100%;
@@ -288,21 +294,34 @@ main {
   }
 }
 
-// .loader{
-//   background: $main-white;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   transition: all 600ms ease-in-out;
+footer {
+  width: 100%;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  background-color: $primary-color;
 
-//   svg path,
-//   svg rect{
-//     fill: $primary-color;
-//   }
-// }
+  h4 {
+    font-size: 1.4rem;
+    color: $main-white;
+  }
+}
+
+.loader{
+  background: $main-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 600ms ease-in-out;
+
+  svg path,
+  svg rect{
+    fill: $primary-color;
+  }
+}

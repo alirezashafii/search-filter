@@ -246,10 +246,12 @@ main .main-child .search-box .filters a {
 main .main-child .products {
   width: 100%;
   height: auto;
-  padding: 115px 30px 40px;
+  padding: 115px 30px 80px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-  gap: 15px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 25px;
   justify-content: center;
 }
 main .main-child .products .product {
@@ -258,10 +260,13 @@ main .main-child .products .product {
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 0 0.5px 1px rgba(94, 94, 94, 0.1);
-  transition: transform 250ms ease-in;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 250ms ease-in-out;
+}
+main .main-child .products .product:hover, main .main-child .products .product:active {
+  transform: scale(1.02);
 }
 main .main-child .products .product img {
   width: 100%;
@@ -284,4 +289,34 @@ main .main-child .products .product .description {
 main .main-child .products .product .price {
   font-size: 1.4rem;
   font-family: sans-serif, "Advent Pro";
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  background-color: #b91c1c;
+}
+footer h4 {
+  font-size: 1.4rem;
+  color: #f8fafc;
+}
+
+.loader {
+  background: #f8fafc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 600ms ease-in-out;
+}
+.loader svg path,
+.loader svg rect {
+  fill: #b91c1c;
 }/*# sourceMappingURL=style.css.map */
