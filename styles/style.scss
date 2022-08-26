@@ -243,6 +243,7 @@ main {
     .products {
       width: 100%;
       height: auto;
+      min-height: 90vh;
       padding: 115px 30px 80px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
